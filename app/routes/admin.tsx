@@ -1,4 +1,4 @@
-import type { LinksFunction } from 'remix'
+import { LinksFunction, Outlet } from 'remix'
 import { Link, useLoaderData } from 'remix'
 import type { Post } from '~/post'
 import { getPosts } from '~/post'
@@ -27,7 +27,9 @@ export default function Admin() {
           ))}
         </ul>
       </nav>
-      <main>...</main>
+      <main>
+        <Outlet />
+      </main>
     </div>
   )
 }
