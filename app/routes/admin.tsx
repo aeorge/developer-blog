@@ -1,5 +1,5 @@
-import { LinksFunction, Outlet } from 'remix'
-import { Link, useLoaderData } from 'remix'
+import type { LinksFunction } from 'remix'
+import { Link, Outlet, useLoaderData } from 'remix'
 import type { Post } from '~/post'
 import { getPosts } from '~/post'
 import adminStyles from '~/styles/admin.css'

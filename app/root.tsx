@@ -1,3 +1,4 @@
+import type { LinksFunction } from 'remix'
 import {
   Link,
   Links,
@@ -8,10 +9,8 @@ import {
   ScrollRestoration,
   useCatch
 } from 'remix'
-import type { LinksFunction } from 'remix'
-
-import globalStylesUrl from '~/styles/global.css'
 import darkStylesUrl from '~/styles/dark.css'
+import globalStylesUrl from '~/styles/global.css'
 
 // https://remix.run/api/app#links
 export const links: LinksFunction = () => {
