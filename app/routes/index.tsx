@@ -5,15 +5,15 @@ import { json } from 'remix'
 // you can connect to a database or run any server side code you want right next
 // to the component that renders it.
 // https://remix.run/api/conventions#loader
-export let loader: LoaderFunction = () => {
-  let data = {}
+export const loader: LoaderFunction = () => {
+  const data = {}
 
   // https://remix.run/api/remix#json
   return json(data)
 }
 
 // https://remix.run/api/conventions#meta
-export let meta: MetaFunction = () => {
+export const meta: MetaFunction = () => {
   return {
     title: 'Remix Starter',
     description: 'Welcome to remix!'
