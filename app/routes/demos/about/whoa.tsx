@@ -1,4 +1,4 @@
-import { Link } from "remix";
+import { Link } from 'remix'
 
 export default function AboutIndex() {
   return (
@@ -10,11 +10,11 @@ export default function AboutIndex() {
       </p>
       <p>
         <strong>
-          <Link to="..">
+          <Link to='..'>
             Go back to the <code>/about</code> index.
           </Link>
         </strong>
       </p>
     </div>
-  );
+  )
 }
